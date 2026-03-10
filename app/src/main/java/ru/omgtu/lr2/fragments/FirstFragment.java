@@ -14,24 +14,10 @@ import android.widget.Button;
 
 import ru.omgtu.lr2.R;
 
-public class FirstFragment extends Fragment {
+public class FirstFragment extends BaseFragment {
 
-    // Интерфейс для колбэков
-    public interface OnFragmentInteractionListener {
-        void onButtonPressed(int buttonId);
-    }
 
-    private OnFragmentInteractionListener listener;
 
-    @Override
-    public void onAttach(@NonNull Context context) {
-        super.onAttach(context);
-        if (context instanceof OnFragmentInteractionListener) {
-            listener = (OnFragmentInteractionListener) context;
-        } else {
-            throw new RuntimeException(context.toString() + " must implement OnFragmentInteractionListener");
-        }
-    }
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
@@ -66,9 +52,5 @@ public class FirstFragment extends Fragment {
         });
     }
 
-    @Override
-    public void onDetach() {
-        super.onDetach();
-        listener = null;
-    }
+
 }

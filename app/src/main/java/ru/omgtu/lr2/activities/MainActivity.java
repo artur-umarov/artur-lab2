@@ -4,12 +4,12 @@ import android.os.Bundle;
 import android.widget.Toast;
 
 import androidx.appcompat.app.AppCompatActivity;
-import androidx.fragment.app.Fragment;
+import ru.omgtu.lr2.fragments.BaseFragment;
 
 import ru.omgtu.lr2.R;
 import ru.omgtu.lr2.fragments.FirstFragment;
 
-public class MainActivity extends AppCompatActivity implements FirstFragment.OnFragmentInteractionListener {
+public class MainActivity extends AppCompatActivity implements BaseFragment.OnFragmentInteractionListener {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
