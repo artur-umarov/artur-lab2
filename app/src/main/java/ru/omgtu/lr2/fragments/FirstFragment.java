@@ -49,9 +49,10 @@ public class FirstFragment extends Fragment {
         btnOpenSecond.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                if (listener != null) {
-                    listener.onButtonPressed(1);
-                }
+                requireActivity().getSupportFragmentManager().beginTransaction()
+                        .replace(R.id.container, new SecondFragment())
+                        .addToBackStack(null)
+                        .commit();
             }
         });
 
