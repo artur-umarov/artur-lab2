@@ -19,4 +19,17 @@
         android:layout_height="wrap_content"
         android:text="Назад"/>
 
+    <Button
+        android:id="@+id/btnOpenChild"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Открыть дочерний фрагмент"
+        android:layout_marginTop="16dp"/>
+
+    <FrameLayout
+        android:id="@+id/child_container"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"/>
+
 </LinearLayout>
