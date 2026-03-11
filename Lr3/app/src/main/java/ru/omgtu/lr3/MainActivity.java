@@ -4,6 +4,8 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 
+import ru.omgtu.lr3.fragments.GridFragment;
+
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.fragment.app.Fragment;
 
@@ -19,6 +21,13 @@ public class MainActivity extends AppCompatActivity {
 
         Button btnLinear = findViewById(R.id.btnLinear);
         Button btnConstraint = findViewById(R.id.btnConstraint);
+        Button btnGrid = findViewById(R.id.btnGrid);
+        btnGrid.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                openFragment(new GridFragment());
+            }
+        });
 
         btnLinear.setOnClickListener(new View.OnClickListener() {
             @Override

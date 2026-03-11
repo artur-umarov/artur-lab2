@@ -36,6 +36,14 @@
             android:text="FrameLayout"
             android:layout_marginStart="4dp"/>
 
+        <Button
+            android:id="@+id/btnGrid"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="GridLayout"
+            android:layout_marginStart="4dp"/>
+
     </LinearLayout>
 
     <FrameLayout
